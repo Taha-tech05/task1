@@ -1,0 +1,134 @@
+/* Type Selector */
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right, #f6f9fc, #e9f1ff);
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#222;
+}
+
+/* Class Selector */
+.logo{
+    color:white;
+}
+
+/* Navigation */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+/* ID selector example */
+#gallery{
+    background:#ffffff;
+}
+
+/* Pseudo Classes */
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd700;
+}
+
+.nav-links a:active{
+    color:red;
+}
+
+/* Sections */
+.section{
+    padding:60px 10%;
+    text-align:center;
+}
+
+/* Gallery Grid */
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    border-radius:12px;
+    transition:0.4s;
+}
+
+/* Creativity: Hover zoom */
+.gallery-container img:hover{
+    transform:scale(1.08);
+}
+
+/* About */
+.about{
+    background:#f0f4ff;
+}
+
+/* Feedback */
+.feedback-form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.feedback-form input,
+.feedback-form textarea{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* Button */
+button{
+    padding:12px;
+    border:none;
+    background:#333;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#555;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media(max-width:1000px){
+    .gallery-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .gallery-container{
+        grid-template-columns:1fr;
+    }
+}
